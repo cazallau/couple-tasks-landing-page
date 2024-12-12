@@ -16,6 +16,17 @@ app_description                           : Organize household tasks with your p
 
 enable_smart_app_banner                   : true                                      
 
+# Navigation Bar
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+# Pages
+include_in_header                         : true                                      # Adds a link to Privacy Policy in the header
+pages:
+  - title: Privacy Policy
+    url: /privacypolicy
+    include_in_header: true
+
 # Information About Yourself
 your_name                                 : Antonio Jesús Cazalla Ureña                                
 your_link                                 : https://twitter.com/cazallau
@@ -75,5 +86,39 @@ social_icons_foreground_color             : "#666666"
 social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown rendering
+markdown: kramdown
 
 # Do not modify Jekyll configuration below this line
